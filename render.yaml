@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: remindy-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python remindy_bot.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
